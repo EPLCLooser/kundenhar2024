@@ -1,0 +1,30 @@
+h1 {
+    font-size:25px;
+ }
+
+#header{
+    height: 10vh;
+    position: fixed;
+ }
+.container{
+    display: grid;
+    margin-top: 10vh;
+    grid-template-rows: 5vh 85vh;
+    grid-template-areas: 
+    'nv'
+    'mn';
+}
+.nav{
+    grid-area: nv;
+    justify-content: space-evenly;
+}
+.main{
+    grid-area: mn;
+}
+.navlink{
+    flex:1;
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    flex-direction: row;
+}
