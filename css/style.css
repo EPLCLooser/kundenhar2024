@@ -39,7 +39,7 @@ header{
     order:1;
     display: grid;
     margin-top: 15vh;
-    grid-template-rows: 5vh 95vh;
+    grid-template-rows: 5vh auto;
     grid-template-columns: 75% 25%;
     grid-template-areas: 
     'nv nv'
@@ -51,15 +51,20 @@ nav{
     background-color: #e67e22;
 }
 main{
+    padding: 10px;
     grid-area: mn;
     display: flex;
+    gap: 10px;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
+    background-color: darkslategray;
 }
 
 aside{
     grid-area: as;
+    background-color: darkslategray;
+    border-left: 2px solid #e67e22;
 }
 h1{
     font-family: "Bebas Neue", sans-serif;
@@ -87,6 +92,13 @@ h1{
 }
 .cards{
     display: flex;
-    max-width: 100px;
-    height: 200px;
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    border: 2px solid #e67e22;
+    background-color: white;
+}
+.cards img{
+    width: fit-content;
+    height: 150px;
 }
