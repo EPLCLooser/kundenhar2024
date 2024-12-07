@@ -2,6 +2,12 @@ body{
     display: flex;
     flex-direction: column;
     margin: 0px;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+
+}
+::-webkit-scrollbar {
+    display: none;
 }
 
 h1{
@@ -9,10 +15,9 @@ h1{
     font-size: 70px !important;
     font-size:25px;
     color: #e67e22;
- }
-  
+}
 
-#head{
+header{
     height: 15vh;
     width: 100vw;
     position: fixed;
@@ -34,25 +39,25 @@ h1{
     order:1;
     display: grid;
     margin-top: 15vh;
-    grid-template-rows: 5% 80% 15%;
-    grid-template-columns: 5vh 50vh 45vh;
+    grid-template-rows: 5vh 95vh;
+    grid-template-columns: 75% 25%;
     grid-template-areas: 
-    'nv nv nv'
-    'mn sc as'
-    'mn mn as';
+    'nv nv'
+    'mn as';
 }
 nav{
     grid-area: nv;
     display: flex;
     background-color: #e67e22;
-
 }
 main{
     grid-area: mn;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
 }
-section{
-    grid-area: sc;
-}
+
 aside{
     grid-area: as;
 }
@@ -79,4 +84,9 @@ h1{
 #current{
     text-decoration: underline;
     text-transform: uppercase;
+}
+.cards{
+    display: flex;
+    max-width: 100px;
+    height: 200px;
 }
