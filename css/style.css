@@ -40,7 +40,7 @@ header{
     order:1;
     display: grid;
     margin-top: 15vh;
-    grid-template-rows: 5vh 95vh;
+    grid-template-rows: 5vh 80vh;
     grid-template-columns: 75% 25%;
     grid-template-areas: 
     'nv nv'
@@ -58,7 +58,7 @@ nav{
     min-height: 80vh;
     justify-content: center;
 }
-#containeromoss main{
+#omossmain{
     height: 80vh;
     background-color: darkslategray;
 }
@@ -67,6 +67,11 @@ aside{
     grid-area: as;
     background-color: darkslategray;
     border-left: 2px solid #e67e22;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3vh;
+    overflow: scroll;
 }
 
 .navlinks{
@@ -125,7 +130,6 @@ aside{
     margin-left: 15px;
     font-family:'Anonymous Pro';
     font-size: 1rem;
-    overflow: hidden;
     color: darkslategray;
 }
 
@@ -145,4 +149,10 @@ aside{
 p{
     font-family:'Anonymous Pro';
     font-size: 1rem;
+}
+
+.review{
+    background-color: white;
+    width: 85%;
+    height: 300px;
 }
