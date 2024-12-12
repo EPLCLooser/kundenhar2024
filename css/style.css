@@ -52,16 +52,11 @@ nav{
     background-color: #e67e22;
 }
 #restaurangermain{
-    padding-top: 20px;
-    padding-left: 150px;
-    padding-right: 150px;
-    padding-bottom: 20px;
     grid-area: mn;
     display: flex;
-    gap: 30px;
-    flex-direction: row;
-    flex-wrap: wrap;
     background-color: darkslategray;
+    min-height: 80vh;
+    justify-content: center;
 }
 #containeromoss main{
     height: 80vh;
@@ -94,49 +89,60 @@ aside{
     text-decoration: underline;
     text-transform: uppercase;
 }
+#cardcontainer{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
 .cards{
     display: flex;
     flex-direction: column;
-    justify-content: start;
-    width: 300px;
-    height: 400px;
+    width: 17vw;
+    height: 48vh;
     border-radius: 5px;
+    margin-top: 20px;
     border: 2px solid #e67e22;
     background-color: white;
 }
 .cards img{
-    width: 300px;
-    height: 150px;
+    width: 100%;
+    height: 35%;
     border-radius: 3px 3px 0px 0px;
     object-fit: cover;
     border-bottom: 2px solid #e67e22;
 }
 .cards h2{
-    margin: 5px;
+    margin-top: 10px;
+    margin-left: 15px;
+    font-family: "DM Serif Text", serif;
     color: darkslategray;
 }
 .cards p{
-    margin: 5px;
+    margin-left: 15px;
+    font-family:'Anonymous Pro';
+    font-size: 1rem;
     overflow: hidden;
     color: darkslategray;
 }
-.hemcards{
 
-}
 #hemmain{
-    height: 75vh;
+    height: 80vh;
     background-color: darkslategray;
-    padding-top: 30px;
+    padding-top: 50px;
     padding-left: 250px;
     padding-right: 250px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.hemcards:hover{
+    border: 2px solid black;
 }
 p{
     font-family:'Anonymous Pro';
     font-size: 1rem;
-}
-h2{
-    font-family: "DM Serif Text", serif;
 }
