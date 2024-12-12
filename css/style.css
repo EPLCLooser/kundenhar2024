@@ -121,13 +121,8 @@ aside{
     color: darkslategray;
 }
 .hemcards{
-    background-color: #e67e22;
-    display: flex;
-}
-.hemcards:hover{
-    color: aqua;
-}
 
+}
 #hemmain{
     height: 75vh;
     background-color: darkslategray;
@@ -137,4 +132,11 @@ aside{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+}
+p{
+    font-family:'Anonymous Pro';
+    font-size: 1rem;
+}
+h2{
+    font-family: "DM Serif Text", serif;
 }
