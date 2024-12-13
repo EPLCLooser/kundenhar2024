@@ -123,11 +123,14 @@ aside{
 .cards h2{
     margin-top: 10px;
     margin-left: 15px;
+    margin-bottom: 0px;
     font-family: "DM Serif Text", serif;
     color: darkslategray;
 }
 .cards p{
+    margin-top: 5px;
     margin-left: 15px;
+    margin-right: 15px;
     font-family:'Anonymous Pro';
     font-size: 1rem;
     color: darkslategray;
