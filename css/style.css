@@ -68,6 +68,7 @@ nav{
     background-color: darkslategray;
     color: white;
     padding: 20px;
+    overflow: auto;
 }
 #omossmain p{
     color: white;
@@ -172,13 +173,12 @@ p{
 .review{
     background-color: white;
     width: 85%;
-    height: 300px;
+    height: 20vh;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #e67e22;
 }
 .review img{
-    width: 30%;
-    height: 20%;
+    height: 40%;
     object-fit: cover;
 }
